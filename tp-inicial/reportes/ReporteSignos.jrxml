@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteSignos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="b2d43651-37d7-4972-b17b-5a94a91cfce8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="fechaCumpleaños" class="java.sql.Date">
+		<fieldDescription><![CDATA[fechaCumpleaños]]></fieldDescription>
+	</field>
+	<field name="mail" class="java.lang.String">
+		<fieldDescription><![CDATA[mail]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[nombre]]></fieldDescription>
+	</field>
+	<field name="signo" class="datos.reporte.SignoZodiaco">
+		<fieldDescription><![CDATA[signo]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[telefono]]></fieldDescription>
+	</field>
+	<variable name="signo1" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Count">
+		<variableExpression><![CDATA[$F{signo}]]></variableExpression>
+	</variable>
+	<variable name="otroSigno" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{signo}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<rectangle>
+					<reportElement mode="Opaque" x="-1" y="0" width="551" height="30" backcolor="#0080FF" uuid="626de2e9-2003-4983-b78d-7be80ae80bf2"/>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+				<textField>
+					<reportElement x="20" y="0" width="70" height="30" uuid="0a1232d7-9cbe-4072-a90f-e3f6bb115ca6"/>
+					<textElement>
+						<font fontName="Serif" size="16" isBold="true" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{signo}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="30">
+				<rectangle>
+					<reportElement x="0" y="0" width="555" height="30" uuid="6fb50429-dad0-4e68-8a20-556fd54a5519"/>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+				<textField>
+					<reportElement x="460" y="10" width="80" height="20" uuid="bc14f416-f208-48e9-acb5-17138850bf6a"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{signo1}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="410" y="10" width="50" height="20" uuid="c3dcb63a-97bb-4daf-86d9-aaae7edb16a1"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total:]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="20" width="240" height="25" uuid="4dfddb6e-1669-46fb-aae3-76876e3af334"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de Signos de Personas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="0" width="95" height="20" uuid="a9c3b98b-40ff-4a72-a583-7f08edf078fe"/>
+				<text><![CDATA[Reporte generado el:]]></text>
+			</staticText>
+			<textField pattern="d/M/yy">
+				<reportElement x="100" y="0" width="110" height="20" uuid="75cb8dea-855a-4865-b3d0-4e86b4393bf1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="10" width="420" height="23" uuid="264ca248-7a05-4647-8100-4c036674666a"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Estadísticas de personas registradas]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="550" height="30" uuid="69131558-90ce-4e83-8684-884119feb6a7"/>
+				<staticText>
+					<reportElement x="20" y="10" width="100" height="20" uuid="9e23a124-d6ff-4fd6-972e-83d402889ca4"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha de Nac.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="140" y="10" width="160" height="20" uuid="39b3cf9a-681c-4377-8e3c-539e507fb282"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nombre]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="320" y="10" width="70" height="20" uuid="4d10cf90-ffaf-4482-8629-a15207a48542"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Teléfono]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="410" y="10" width="130" height="20" uuid="e917d5b7-ebff-4543-a9b9-f476673a58bd"/>
+					<textElement>
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[E-mail]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<frame>
+				<reportElement x="5" y="0" width="550" height="30" uuid="fbc12300-0931-40e1-b698-1c5a0ee73af6"/>
+				<textField pattern="d/M/yy">
+					<reportElement x="15" y="10" width="100" height="20" uuid="dc9cc4db-8b3b-4097-aee3-782286bb5c06"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fechaCumpleaños}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="135" y="10" width="160" height="20" uuid="b99dede0-3914-4a53-bff5-7b4592405d51"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="310" y="10" width="70" height="20" uuid="30453985-c77f-4af7-85e3-47b704dd1d30"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="405" y="10" width="130" height="20" uuid="abc10809-d63d-4cac-afea-cf66662c8839"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{mail}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="200" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="0" width="555" height="200" uuid="517d0b63-c14f-419f-9b36-71235bd5b4f6"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<dataset incrementType="Group" incrementGroup="Group1"/>
+					<keyExpression><![CDATA[$F{signo}  + ": " + $V{signo1}]]></keyExpression>
+					<valueExpression><![CDATA[$V{signo1}]]></valueExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+		</band>
+	</summary>
+</jasperReport>
