@@ -178,11 +178,11 @@
 		<band height="54" splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="200" splitType="Stretch">
+		<band height="500" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 			<pieChart>
 				<chart evaluationTime="Report">
-					<reportElement x="0" y="0" width="555" height="200" uuid="517d0b63-c14f-419f-9b36-71235bd5b4f6"/>
+					<reportElement x="0" y="0" width="555" height="500" uuid="517d0b63-c14f-419f-9b36-71235bd5b4f6"/>
 					<chartTitle/>
 					<chartSubtitle/>
 					<chartLegend/>

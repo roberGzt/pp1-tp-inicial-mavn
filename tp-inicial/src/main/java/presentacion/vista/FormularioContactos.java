@@ -43,48 +43,6 @@ public class FormularioContactos extends JFrame {
 
 	private List<LocalidadDTO> localidades = null;
 
-	// TODO crear m�todo para agregar esta lista de localidades a la bd.
-	/*
-	 * { "17 de Agosto", "25 de Mayo", "9 de Julio / La Ni�a", "Acassuso",
-	 * "Aguas Verdes", "Alberti", "Arenas Verdes", "Arrecifes", "Avellaneda",
-	 * "Ayacucho", "Azul", "Bah�a Blanca", "Bah�a San Blas", "Balcarce",
-	 * "Balneario Marisol", "Balneario Orense", "Balneario Reta",
-	 * "Balneario San Cayetano", "Baradero", "Bella Vista", "Benito Ju�rez",
-	 * "Berazategui", "Berisso", "Boulogne", "Bragado", "Brandsen", "Campana",
-	 * "Capilla del Se�or", "Capital Federal", "Capit�n Sarmiento", "Carapachay",
-	 * "Carhue", "Carhu�", "Carlos Keen", "Carmen de Areco", "Carmen de Patagones",
-	 * "Caseros", "Castelar", "Castelli", "Chacabuco", "Chascom�s", "Chivilcoy",
-	 * "City Bell", "Ciudadela", "Claromec�", "Col�n", "Coronel Dorrego",
-	 * "Coronel Pringles", "Coronel Su�rez", "Darregueira", "Dunamar", "Escobar",
-	 * "Ezeiza", "Florencio Varela", "Florida", "Fort�n Mercedes", "Garin",
-	 * "General Arenales", "General Belgrano", "General Madariaga",
-	 * "General Villegas", "Gral. Daniel Cerri", "Gran Buenos Aires", "Guamin�",
-	 * "Haedo", "Huanguelen", "Hurlingham", "Isla Mart�n Garc�a", "Ituzaingo",
-	 * "Jun�n", "La Plata", "La Tablada", "Laferrere", "Lanus", "Laprida",
-	 * "Las Flores", "Las Gaviotas", "Las Toninas", "Lima", "Lisandro Olmos",
-	 * "Llavallol", "Lobos", "Lomas de Zamora", "Los Toldos - Gral. Viamonte",
-	 * "Los Polvorines", "Lucila del Mar", "Luis Guill�n", "Luj�n", "Magdalena",
-	 * "Maip�", "Mar Azul", "Mar Chiquita", "Mar de Aj�", "Mar de Cobo",
-	 * "Mar del Plata", "Mar del Sud", "Mar del Tuy�", "Martinez",
-	 * "M�danos / Laguna Chasic�", "Mercedes", "Merlo", "Miramar", "Monte Hermoso",
-	 * "Moreno", "Mor�n", "Munro", "Navarro", "Necochea", "Nueva Atlantis",
-	 * "Olavarr�a", "Olivos", "Open Door", "Ostende", "Pedro Luro", "Pehuaj�",
-	 * "Pehuen C�", "Pergamino", "Pig��", "Pilar", "Pinamar",
-	 * "Provincia de Buenos Aires", "Puan", "Punta Alta", "Punta Indio",
-	 * "Punta Lara", "Quequ�n", "Quilmes", "Ramallo", "Ramos Mej�a", "Ranchos",
-	 * "Rauch", "Rivadavia", "Rojas", "Roque P�rez", "Saenz Pe�a", "Saladillo",
-	 * "Salto", "San Antonio de Areco", "San Bernardo", "San Cayetano",
-	 * "San Clemente del Tuy�", "San Fernando", "San Isidro", "San Justo",
-	 * "San Martin", "San Miguel del Monte", "San Nicol�s", "San Pedro",
-	 * "San Vicente", "Santa Clara del Mar", "Santa Teresita", "Sarand�",
-	 * "Sierra de la Ventana", "Sierra de los Padres", "Sierras de los Padres",
-	 * "Tandil", "Tapalqu�", "Temperley", "Tigre", "Tornquist / Ruta Prov. 76",
-	 * "Trenque Lauquen", "Tres Arroyos", "Turdera", "Valentin Alsina",
-	 * "Vicente Lopez", "Victoria", "Villa Ballester", "Villa Gesell",
-	 * "Villa Lynch", "Villa Serrana La Gruta", "Villa Ventana", "Villalonga",
-	 * "Wilde", "Z�rate" };
-	 */
-
 	private List<TipoDeContactoDTO> tiposDeContacto = null;
 
 	private JPanel panel;
